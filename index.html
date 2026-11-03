@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gadgets Tech</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="topo-fofo">
+        ♡  ♡
+    </div>
+
+    <header>
+        <h1>Gadgets Tech</h1>
+
+        <nav>
+            <a href="#catalogo">Catálogo</a>
+            <a href="#carrinho">Carrinho (<span id="contador-carrinho">0</span>)</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="catalogo">
+            <h2>Catálogo de Produtos</h2>
+
+            <div class="filtros">
+                <input
+                    type="text"
+                    id="busca"
+                    placeholder="Buscar produto pelo nome..."
+                >
+
+                <select id="filtro-categoria">
+                    <option value="todos">Todas as categorias</option>
+                    <option value="Wearables">Wearables</option>
+                    <option value="Casa Inteligente">Casa Inteligente</option>
+                    <option value="Áudio Avançado">Áudio Avançado</option>
+                </select>
+            </div>
+
+            <div id="lista-produtos" class="produtos">
+            </div>
+        </section>
+
+        <section id="carrinho">
+            <h2>Meu Carrinho</h2>
+
+            <div id="lista-carrinho">
+            </div>
+
+            <p>Total: <strong id="valor-total">R$ 0,00</strong></p>
+
+            <button id="limpar-carrinho">Limpar carrinho</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Gadgets Tech &copy; 2026</p>
+    </footer>
+
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
